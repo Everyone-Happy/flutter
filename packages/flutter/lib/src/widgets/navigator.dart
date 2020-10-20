@@ -573,6 +573,10 @@ class NavigatorObserver {
   NavigatorState get navigator => _navigator;
   NavigatorState _navigator;
 
+  set navigator(NavigatorState newNavigator) {
+    _navigator = newNavigator;
+  }
+
   /// The [Navigator] pushed `route`.
   ///
   /// The route immediately below that one, and thus the previously active
